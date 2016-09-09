@@ -1,0 +1,21 @@
+{
+  "name": "eslint-plugin-weex-bundle",
+  "version": "0.0.1",
+  "author": "Hanks <zhanghan.me@gmail.com>",
+  "description": "Weex bundle specific linting rules for ESLint",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin",
+    "weex-eslint",
+    "weex-bundle",
+    "weex"
+  ],
+  "devDependencies": {
+    "eslint": "^3.4.0"
+  },
+  "license": "MIT"
+}

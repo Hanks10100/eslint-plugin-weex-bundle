@@ -6,4 +6,9 @@ var rules = {
 
 module.exports = {
   rules: rules,
+  configs: {
+    rules: {
+      'no-this': 2
+    }
+  }
 }

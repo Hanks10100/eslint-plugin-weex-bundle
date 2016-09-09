@@ -6,6 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hanks10100/eslint-plugin-weex-bundle"
+  },
+  "homepage": "https://github.com/Hanks10100/eslint-plugin-weex-bundle",
+  "bugs": "https://github.com/Hanks10100/eslint-plugin-weex-bundle/issues",
   "keywords": [
     "eslint",
     "eslint-plugin",
@@ -14,6 +20,9 @@
     "weex-bundle",
     "weex"
   ],
+  "peerDependencies": {
+    "eslint": "^2.0.0 || ^3.0.0"
+  },
   "devDependencies": {
     "eslint": "^3.4.0"
   },

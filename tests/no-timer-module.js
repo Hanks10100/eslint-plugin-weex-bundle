@@ -19,14 +19,20 @@ const errors = [{
 const tester = new RuleTester()
 tester.run("no-timer-module", rule, {
   valid: [
-    `foo.bar()`,
-    `require('@weex-module/dom')`,
+    `require('@weex-module/whatever')`,
+    `__weex_require__('@weex-module/dom')`,
   ],
   invalid: [{
     code: `require('@weex-module/timer')`,
     errors
   }, {
-    code: `var timer = require("@weex-module/timer");`,
+    code: `abc=__weex_require__("@weex-module/timer")`,
+    errors
+  }, {
+    code: `;__weex_require__(  "@weex-module/timer");module.exports={}`,
+    errors
+  }, {
+    code: `(function(){__weex_require__("@weex-module/timer")})()`,
     errors
   }]
 })

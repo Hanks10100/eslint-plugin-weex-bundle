@@ -1,7 +1,7 @@
 'use strict';
 
 var rules = {
-  'no-this': require( `${__dirname}/rules/no-this.js` )
+  'no-timer-module': require('./rules/no-timer-module.js'),
 }
 
 module.exports = {
@@ -10,7 +10,7 @@ module.exports = {
     recommended: {
       env: ['node'],
       rules: {
-        'no-this': 2
+        'no-timer-module': 2
       }
     }
   }

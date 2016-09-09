@@ -7,8 +7,11 @@ var rules = {
 module.exports = {
   rules: rules,
   configs: {
-    rules: {
-      'no-this': 2
+    recommended: {
+      env: ['node'],
+      rules: {
+        'no-this': 2
+      }
     }
   }
 }

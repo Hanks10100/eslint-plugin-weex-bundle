@@ -1,0 +1,22 @@
+<template>
+  <div class="wrapper">
+    <text>{{greeting}}</text>
+  </div>
+</template>
+
+<style>
+  .wrapper {
+    background-color: #DDD;
+  }
+</style>
+
+<script>
+  module.exports = {
+    data: {
+      greeting: 'Please wait ...'
+    },
+    ready: function() {
+      this.greeting = 'Hello World.'
+    }
+  }
+</script>

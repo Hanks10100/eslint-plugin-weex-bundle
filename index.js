@@ -1,11 +1,18 @@
 'use strict';
 
-var rules = {
+const rules = {
   'no-timer-module': require('./rules/no-timer-module.js'),
 }
 
+const processor = require('./processor.js')
+
 module.exports = {
   rules: rules,
+
+  processors: {
+    ".we": processor,
+  },
+
   configs: {
     recommended: {
       env: ['node'],

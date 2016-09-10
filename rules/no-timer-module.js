@@ -20,7 +20,10 @@ module.exports = {
       CallExpression: function(node) {
         var callee = node.callee
 
-        if (callee.type === 'Identifier' && callee.name === 'require') {
+        if (callee.type === 'Identifier'
+          && callee.name === '__weex_require__'
+          || callee.name === '__webpack_require__'
+          || callee.name === 'require') {
           const args = node.arguments
           if (args[0] && args[0].value === '@weex-module/timer') {
             context.report({

@@ -23,6 +23,9 @@
   "peerDependencies": {
     "eslint": "^2.0.0 || ^3.0.0"
   },
+  "dependencies": {
+    "parse5": "^2.2.1"
+  },
   "devDependencies": {
     "eslint": "^3.4.0",
     "mocha": "^3.0.2"

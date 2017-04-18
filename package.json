@@ -1,6 +1,6 @@
 {
   "name": "@weex-project/eslint-plugin-weex-bundle",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "author": "Hanks <zhanghan.me@gmail.com>",
   "description": "Weex bundle specific linting rules for ESLint",
   "scripts": {

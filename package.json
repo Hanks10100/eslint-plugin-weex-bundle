@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-weex-bundle",
+  "name": "@weex-project/eslint-plugin-weex-bundle",
   "version": "0.0.8",
   "author": "Hanks <zhanghan.me@gmail.com>",
   "description": "Weex bundle specific linting rules for ESLint",
